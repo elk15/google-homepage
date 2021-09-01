@@ -1,6 +1,14 @@
 .container{
-   display: flex;
-   justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 35.9fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+   /*display: flex;
+   justify-content: center;*/
 }
 #google-img{
     display: block;
@@ -8,14 +16,86 @@
     margin: 0 auto;
 }
 
+.right{
+    justify-self: end;
+    
+}
+
+#sign, #button{
+    display: inline
+    margin-top:;
+}
+
 .main{
     margin: 0 auto;
+    grid-area: main;
+}
+
+header{
+grid-area: header;
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.right-b{
+    justify-self: end;
 }
 
 #search{
-    margin: 2em 2em;
+    margin: 1.5em 2em;
     border-radius: 2em;
     border: 1px solid lightgray;
     padding:0.9em 2em;
     width: 42em;
+    background: url(imgs/google-search.png) no-repeat scroll 7px 7px;
 }
+
+input:hover{
+    box-shadow: 0 1px 6px 0 grey;
+
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.btn{
+    margin:0.9em 9em;
+}
+
+.btn button{
+    padding: 0.7em 1.5em;
+    background-color:#f2f2f2;
+    border:1px solid #f2f2f2;
+    border-radius: 0.3em;
+    color: #5F6368;
+    margin: 1rem;
+    cursor:pointer;
+}
+.btn button:hover{
+    color: black;
+    border: 1px solid #c6c6c6;
+   box-shadow:0 1px 1px rgba(0,0,0,0.1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
