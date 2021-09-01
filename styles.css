@@ -1,0 +1,21 @@
+.container{
+   display: flex;
+   justify-content: center;
+}
+#google-img{
+    display: block;
+    padding-top: 11.8125em;
+    margin: 0 auto;
+}
+
+.main{
+    margin: 0 auto;
+}
+
+#search{
+    margin: 2em 2em;
+    border-radius: 2em;
+    border: 1px solid lightgray;
+    padding:0.9em 2em;
+    width: 42em;
+}
