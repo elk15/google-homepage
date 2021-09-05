@@ -132,7 +132,6 @@ input:focus, textarea:focus, select:focus{
 a{
     text-decoration: none;
     color: black;
-    font-size: 13px;
 }
 
 a:hover{
