@@ -33,7 +33,6 @@ body{
     position: absolute;
     right: 40px;
     top: 4px;
-    
 }
 
 .left{
@@ -44,13 +43,9 @@ body{
 .apps{
     position: absolute;
     top:-1.8px;
-    left: 100px;
+    left: 120px;
 }
 
-#sign, #button{
-    display: inline
-    margin-top:;
-}
 
 .main{
     margin: 0 auto;
